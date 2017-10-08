@@ -1,0 +1,23 @@
+.flex-grid {
+  display: flex;
+}
+
+.flex-grid .col {
+  flex: 1;
+}
+
+.app__container {
+  padding: 0 30px;
+}
+
+.app__header {
+  padding-top: 30px;
+  box-shadow: 0 8px 8px -8px #ffa647;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.accent {
+  color: #ffa647;
+  font-size: 35px;
+}
