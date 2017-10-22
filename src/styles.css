@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+body {
+  font-family: 'Lato', sans-serif;
+  background: #010101;
+  color: #C6C6C6;
+  margin: 0;
+}
 
-body{
-    font-family: 'Lato', sans-serif;
-    background: #010101;
-    color: #C6C6C6;
-    margin: 0;
-  }
+.accent {
+  color: #ffa647;
+  font-size: 35px;
+}

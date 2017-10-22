@@ -1,3 +1,36 @@
 .effects__container {
-    border: 1px solid white;
+    padding: 100px 0 0 80px;
+}
+
+.effects__container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.effects__container li {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.fa-power-off {
+    padding-right: 10px;
+    color: #4f5256;
+    transition: all 0.2s;
+}
+
+.fa-power-off:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2s;
+    padding-right: 20px;
+}
+
+.effects__header {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-bottom: 15px;
 }
