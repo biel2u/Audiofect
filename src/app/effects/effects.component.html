@@ -1,11 +1,12 @@
 <div class="effects__container">
   <div class="effects__header">
-    <span class="accent">Chose</span> your effect
+    <span class="accent">Wybierz</span> efekt
   </div>
   <ul>
-    <li><i class="fa fa-power-off" (click)="addReverb()"></i><span class="option">Reverb</span></li>
-    <li><i class="fa fa-power-off"></i><span class="option">Delay</span></li>
-    <li><i class="fa fa-power-off"></i><span class="option">Flanger</span></li>
-    <li><i class="fa fa-power-off"></i><span class="option">Distortion</span></li>
+    <li><i class="fa fa-power-off" (click)="reverb()" [ngClass]="{'highlitedButton': reverbOn}"></i><span class="option">
+      <a routerLink="app-reverb">Reverb</a></span></li>
+    <li><i class="fa fa-power-off" (click)="delay()" [ngClass]="{'highlitedButton': delayOn}"></i><span class="option">Delay</span></li>
+    <li><i class="fa fa-power-off" (click)="flanger()" [ngClass]="{'highlitedButton': flangerOn}"></i><span class="option">Flanger</span></li>
+    <li><i class="fa fa-power-off" (click)="distortion()" [ngClass]="{'highlitedButton': distortionOn}"></i><span class="option">Distortion</span></li>
   </ul>
 </div>

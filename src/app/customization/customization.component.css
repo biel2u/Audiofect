@@ -1,0 +1,47 @@
+.customization__header {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.customization__container {
+    padding: 100px 0 0 50px;
+    align-items: center;
+}
+
+.customization__customize {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.customization__option {
+    padding-bottom: 25px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+    transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffa647;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffa647;
+    cursor: pointer;
+}

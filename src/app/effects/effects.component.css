@@ -1,5 +1,5 @@
 .effects__container {
-    padding: 100px 0 0 80px;
+    padding: 100px 0 0 150px;
 }
 
 .effects__container ul {
@@ -32,5 +32,9 @@
 .effects__header {
     font-weight: bolder;
     font-size: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.highlitedButton {
+    color: green;
 }

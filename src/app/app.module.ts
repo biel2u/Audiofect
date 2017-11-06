@@ -4,14 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { EffectsComponent } from './effects/effects.component';
 import { PanelComponent } from './panel/panel.component';
-import { ReverbComponent } from './reverb/reverb.component';
+import { ReverbComponent } from './customization/reverb/reverb.component';
+import { RouterModule, Routes } from '@angular/router';
+import { DelayComponent } from './customization/delay/delay.component';
+import { FlangerComponent } from './customization/flanger/flanger.component';
+import { DistortionComponent } from './customization/distortion/distortion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EffectsComponent,
     PanelComponent,
-    ReverbComponent
+    ReverbComponent,
+    DelayComponent,
+    FlangerComponent,
+    DistortionComponent
   ],
   imports: [
     BrowserModule,
