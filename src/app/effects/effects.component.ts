@@ -2,6 +2,8 @@ import { reverb, delay } from './../globals';
 import { Component, OnInit } from '@angular/core';
 import * as Pizzicato from 'pizzicato';
 import * as myGlobals from '../globals';
+// import { ModalComponent } from './../modal/modal.component';
+// import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-effects',
@@ -63,5 +65,4 @@ export class EffectsComponent implements OnInit {
       this.distortionOn = false;
     }
   }
-
 }

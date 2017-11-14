@@ -38,3 +38,11 @@
 .highlitedButton {
     color: green;
 }
+
+.option a {
+    transition: all 0.2s;
+}
+
+.option:hover a {
+    color: #ffa647;
+}

@@ -18,10 +18,29 @@ import { DistortionComponent } from './customization/distortion/distortion.compo
     ReverbComponent,
     DelayComponent,
     FlangerComponent,
-    DistortionComponent
+    DistortionComponent,
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: 'reverb',
+        component: ReverbComponent
+      },
+      {
+        path: 'delay',
+        component: DelayComponent
+      },
+      {
+        path: 'flanger',
+        component: FlangerComponent,
+        
+      },
+      {
+        path: 'distortion',
+        component: DistortionComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

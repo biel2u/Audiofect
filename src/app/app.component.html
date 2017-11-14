@@ -1,6 +1,6 @@
 <div class="app__container">
   <div class="app__header">
-    <span class="accent">Audio</span>fect
+    <span class="accent">Audio</span>Effects
   </div>
   <div class="flex-grid">
     <div class="col">
@@ -10,9 +10,11 @@
       <app-panel></app-panel>
     </div>
     <div class="col">
-        <!-- <router-outlet></router-outlet> -->
-        <app-reverb></app-reverb>
+      <div class="customization__header">
+        <span class="accent">Ustaw</span> parametry
       </div>
+      <router-outlet></router-outlet>
+    </div>
   </div>
   <footer>Made by Patryk Bielecki</footer>
 </div>

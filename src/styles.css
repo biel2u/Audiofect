@@ -11,3 +11,8 @@ body {
   color: #ffa647;
   font-size: 35px;
 }
+
+a {
+  text-decoration: none;
+  color: #C6C6C6;
+}

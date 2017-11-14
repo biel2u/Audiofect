@@ -36,13 +36,12 @@ export class ReverbComponent implements OnInit {
     myGlobals.reverb.mix = Number(this.reverbMix);
   }
 
-  changeReverbReverse(){
-    if(myGlobals.reverb.reverse) {
+  changeReverbReverse() {
+    if (myGlobals.reverb.reverse) {
       myGlobals.reverb.reverse = false;
     }
     else {
       myGlobals.reverb.reverse = true;
     }
   }
-
 }

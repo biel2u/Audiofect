@@ -13,15 +13,16 @@ export class FlangerComponent implements OnInit {
   flangerSpeed: string;
   flangerMix: string;
   flangerDepth: string;
-  flangerFeedback: string
+  flangerFeedback: string;
 
   constructor() { }
 
   ngOnInit() {
     this.flangerTime = myGlobals.flanger.time;
-    this.flangerSpeed = myGlobals.flanger.decay;
+    this.flangerSpeed = myGlobals.flanger.speed;
     this.flangerMix = myGlobals.flanger.mix;
     this.flangerDepth = myGlobals.flanger.depth;
+    this.flangerFeedback = myGlobals.flanger.feedback;
   }
 
   changeFlangerTime() {
@@ -42,5 +43,10 @@ export class FlangerComponent implements OnInit {
   changeFlangerDepth() {
     this.flangerDepth = (document.getElementById("flangerDepth") as HTMLInputElement).value;
     myGlobals.flanger.depth = Number(this.flangerDepth);
+  }
+
+  changeFlangerFeedback() {
+    this.flangerFeedback = (document.getElementById("flangerFeedback") as HTMLInputElement).value;
+    myGlobals.flanger.feedback = Number(this.flangerFeedback);
   }
 }

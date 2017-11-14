@@ -1,3 +1,20 @@
-<p>
-  delay works!
-</p>
+<div class="customization__container">
+  <h3>Delay:</h3>
+  <div class="customization__customize">
+    <div class="customization__option">
+      <div>Time:</div>
+      <input type="range" min="0.1" max="1" step="0.1" value="{{delayTime}}" class="slider" id="delayTime" (change)="changeDelayTime()">
+      <span>{{delayTime}}</span>
+    </div>
+    <div class="customization__option">
+      <div>Feedback:</div>
+      <input type="range" min="0.1" max="1" step="0.1" value="{{delayFeedback}}" class="slider" id="delayFeedback" (change)="changeDelayFeedback()">
+      <span>{{delayFeedback}}</span>
+    </div>
+    <div class="customization__option">
+      <div>Mix:</div>
+      <input type="range" min="0.1" max="1.0" step="0.1" value="{{delayMix}}" class="slider" id="delayMix" (change)="changeDelayMix()">
+      <span>{{delayMix}}</span>
+    </div>
+  </div>
+</div>

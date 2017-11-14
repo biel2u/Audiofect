@@ -1,4 +1,6 @@
+import { distortion } from './../../globals';
 import { Component, OnInit } from '@angular/core';
+import * as myGlobals from '../../globals';
 
 @Component({
   selector: 'app-distortion',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DistortionComponent implements OnInit {
 
+  distortionGain: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.distortionGain = myGlobals.distortion.gain;
+  }
+
+  changeDistortionGain() {
+    this.distortionGain = (document.getElementById("distortionGain") as HTMLInputElement).value;
+    myGlobals.distortion.gain = Number(this.distortionGain);
   }
 
 }
